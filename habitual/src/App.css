@@ -1,0 +1,592 @@
+/* Original app css for rotating logo*/
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+.appBar-style{
+  padding-top: 1vh;
+  background-color: white !important;
+  margin-bottom: 3vh !important;
+  height: 9vh !important;
+}
+
+.shadow {
+  box-shadow: 0px 0px 25px #c5c5c5;
+}
+
+.lighter-shadow {
+  box-shadow: 0px 0px 20px #d6d6d6;
+}
+
+/* Sets background to light grey */
+.posts-background {
+  background-color: #F9F9F9;
+}
+
+/* Sets padding for post boxes */
+.post-padding {
+  padding: 25px 40px 0px 60px !important;
+}
+
+/* Sets a round border */
+.round-edge {
+  border-radius: 20px;
+}
+
+/* Sets 1 px black border */
+.border {
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(110, 110, 110);
+}
+
+/* Button classes for all main buttons (regular and small)
+To be added to mui Button components*/
+.mainButton {
+  border: solid;
+  border-width: 1px;
+  border-radius: 25px !important; /* This is working */
+  border-color: rgb(110, 110, 110) !important;
+  background-color: none !important;
+  padding: 7px 30px 7px 30px !important;
+  transition: 0.3s;
+  font-size: 0.9em !important;
+  font-weight: 400 !important;
+  color: black ;
+}
+
+.mainButtonInverted {
+  border: solid;
+  border-width: 1px;
+  border-radius: 25px !important; /* This is working */
+  border-color: rgb(110, 110, 110) !important;
+  background-color: black !important;
+  padding: 7px 30px 7px 30px !important;
+  transition: 0.3s;
+  font-size: 0.9em !important;
+  font-weight: 400 !important;
+  color: white !important;
+}
+
+.padding-habit {
+  padding-top: 5px !important;
+}
+
+.smallButton {
+  border: solid;
+  border-width: 1px;
+  border-radius: 25px !important; /* This is working */
+  border-color: rgb(110, 110, 110) !important;
+  background-color: none !important;
+  padding: 7px 30px 7px 30px !important;
+  transition: 0.3s;
+  font-size: 0.75em !important;
+  font-weight: 400 !important;
+}
+
+.smallButtonInverted {
+  border: solid;
+  border-width: 1px;
+  border-radius: 25px !important; /* This is working */
+  border-color: rgb(110, 110, 110) !important;
+  background-color: black !important;
+  padding: 7px 30px 7px 30px !important;
+  transition: 0.3s;
+  font-size: 0.75em !important;
+  font-weight: 400 !important;
+  color: white !important;
+}
+
+.smallerButton {
+  border: solid;
+  border-width: 1px;
+  border-radius: 25px !important; /* This is working */
+  border-color: rgb(110, 110, 110) !important;
+  background-color: none !important;
+  padding: 5px 25px 5px 25px !important;
+  transition: 0.3s;
+  font-size: 0.65em !important;
+  font-weight: 400 !important;
+}
+
+.quiz-card {
+  padding: 10vh 5vh 10vh 5vh;
+  box-sizing: border-box;
+}
+.mainButton:hover, .smallButton:hover, .smallerButton:hover {
+  background-color: #0B0F17 !important;
+  color: white;
+  transition: 0.3s;
+}
+
+.img-style {
+  border-radius: 50%;
+  width:15vh;
+  height:15vh;
+  object-fit: cover;
+}
+
+.align-center {
+  text-align: center;
+}
+/* The next css functions sets up the basic html components (body, h1, h2, etc) */
+body {
+  margin: 0;
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  background-color: white !important;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+
+hr:not([size]) {
+  height: 1px;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 2rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Sets up footer */
+footer {
+  position: fixed;
+  height: 75px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Fixes footer to the bottom for sticky footer */
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* Sets top margin. mt-0 sets 0 margin size to the top. mt-5 sets large margin size to the top */
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mt-6 {
+  margin-top: 5rem !important;
+}
+
+.mt-auto {
+  margin-top: auto !important;
+}
+
+/* Sets height size: 25% 50% 75% 100% */
+.h-25 {
+  height: 25% !important;
+}
+
+.h-50 {
+  height: 50% !important;
+}
+
+.h-75 {
+  height: 75% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+/* Defines containers for content */
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Sets up screen sizes -- Don't need to deep this */
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+
+.write-padding{
+  padding: 25px 30px 25px 40px !important;
+}
+
+.button-padding{
+  padding: 25px 30px 25px 40px  !important;
+}
+
+.write-height {
+  height: 62vh;
+}
+
+@media (max-width: 960px) {
+  .write-height {
+      height: 20vh;
+  }
+}
+
+/* Within each container you need to define a row: <div class="container"> <div class="row">...*/
+/* row provides the columns we are working with*/
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+@media (min-width: 1200px) {
+  .col-xl {
+    flex: 1 0 0%;
+  }
+
+  /* The classes below set the number of columns the content will span starting at 1 all the way to 12 */
+  .col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .col-xl-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
+  .col-xl-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-xl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-xl-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-xl-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-xl-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-xl-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-xl-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-xl-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-xl-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-xl-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  /* The classes below set up grid gutters and margins. you can ignore this */
+  .offset-xl-0 {
+    margin-left: 0;
+  }
+
+  .offset-xl-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .offset-xl-2 {
+    margin-left: 16.66666667%;
+  }
+
+  .offset-xl-3 {
+    margin-left: 25%;
+  }
+
+  .offset-xl-4 {
+    margin-left: 33.33333333%;
+  }
+
+  .offset-xl-5 {
+    margin-left: 41.66666667%;
+  }
+
+  .offset-xl-6 {
+    margin-left: 50%;
+  }
+
+  .offset-xl-7 {
+    margin-left: 58.33333333%;
+  }
+
+  .offset-xl-8 {
+    margin-left: 66.66666667%;
+  }
+
+  .offset-xl-9 {
+    margin-left: 75%;
+  }
+
+  .offset-xl-10 {
+    margin-left: 83.33333333%;
+  }
+
+  .offset-xl-11 {
+    margin-left: 91.66666667%;
+  }
+
+  .g-xl-0,
+.gx-xl-0 {
+    --bs-gutter-x: 0;
+  }
+
+  .g-xl-0,
+.gy-xl-0 {
+    --bs-gutter-y: 0;
+  }
+
+  .g-xl-1,
+.gx-xl-1 {
+    --bs-gutter-x: 0.25rem;
+  }
+
+  .g-xl-1,
+.gy-xl-1 {
+    --bs-gutter-y: 0.25rem;
+  }
+
+  .g-xl-2,
+.gx-xl-2 {
+    --bs-gutter-x: 0.5rem;
+  }
+
+  .g-xl-2,
+.gy-xl-2 {
+    --bs-gutter-y: 0.5rem;
+  }
+
+  .g-xl-3,
+.gx-xl-3 {
+    --bs-gutter-x: 1rem;
+  }
+
+  .g-xl-3,
+.gy-xl-3 {
+    --bs-gutter-y: 1rem;
+  }
+
+  .g-xl-4,
+.gx-xl-4 {
+    --bs-gutter-x: 1.5rem;
+  }
+
+  .g-xl-4,
+.gy-xl-4 {
+    --bs-gutter-y: 1.5rem;
+  }
+
+  .g-xl-5,
+.gx-xl-5 {
+    --bs-gutter-x: 3rem;
+  }
+
+  .g-xl-5,
+.gy-xl-5 {
+    --bs-gutter-y: 3rem;
+  }
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.mx-1 {
+  margin-right: 0.25rem !important;
+  margin-left: 0.25rem !important;
+}
+
+.tank {
+  background-color: black;
+}
