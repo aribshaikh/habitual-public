@@ -1,4 +1,4 @@
-# team03 - Habitual
+# Habitual
 
 Wellness Journey Web application geared towards Muslim Youth and Young Adults
 
@@ -468,13 +468,13 @@ Password: admin
 
 Habitual was implemented by a group of Computer Science and Machine Learning students at the University of Toronto. This project was created for the course CSC309: Programming on the Web. The group members are listed below.
 
-- Danyal Khan
+- Arib Shaikh
 
-- Nima Hashi
+- Danyal Khan
 
 - Sarah Eddeb
 
-- Arib Shaikh
+- Nima Hashi
 
 ## Licensing Information
 
